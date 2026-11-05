@@ -36,7 +36,5 @@
     "hardware_tested": false,
     "binary_identical_to_archived_image": false
   },
-  "excluded_archive_files": [
-    "docs/superpowers/specs/2026-10-06-heater-coprocessor-design.md"
-  ]
+  "excluded_archive_files": []
 }
