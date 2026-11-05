@@ -1,0 +1,42 @@
+{
+  "source_repository": "https://github.com/delorean1483/g0b1-firmware",
+  "source_commit": "5d657284e42197968baf3eb8fdd33320d463ea74",
+  "source_archive_sha256": "f086792cc638e53644e95cc82ac7cdbca3ef19aeb28fd853e1a580f18a7faf48",
+  "functional_source_changes": [],
+  "added_files": [
+    "README.md",
+    "PROVENANCE.json",
+    ".gitignore",
+    "build-windows.ps1",
+    "cube/Drivers/CMSIS/LICENSE.txt",
+    "releases/5d65728/"
+  ],
+  "archived_bench_artifacts": {
+    "heater-l011.bin": {
+      "bytes": 10512,
+      "sha256": "f7cf4ef36a2c330b2f46332accde5b08a23c8ad8446a80969c1bb0cb5fb87408"
+    },
+    "heater-l011.elf": {
+      "bytes": 399556,
+      "sha256": "7dff06fc3d631a8c8a454a3286715d64a3adb1f6f128b2a9ebdb466d6877a214"
+    },
+    "heater-l011.hex": {
+      "bytes": 29642,
+      "sha256": "bb661beab56fd44a41f4f2a952f11c8a2817fb4d5384a9ab52f40bfd94334288"
+    },
+    "heater-l011.map": {
+      "bytes": 108227,
+      "sha256": "7776d15acec727c69e90014f4c65ff3c3037ed4af37ee948fec8d85fb8a4ef96"
+    }
+  },
+  "validation": {
+    "compiler": "Arm GNU Toolchain 14.3.Rel1 GCC 14.3.1",
+    "flash_bytes": 10468,
+    "ram_bytes_including_stack": 1472,
+    "hardware_tested": false,
+    "binary_identical_to_archived_image": false
+  },
+  "excluded_archive_files": [
+    "docs/superpowers/specs/2026-10-06-heater-coprocessor-design.md"
+  ]
+}
