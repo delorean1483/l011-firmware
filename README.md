@@ -19,6 +19,19 @@ On Windows PowerShell:
 Build outputs are written to `heater-coproc/port/l011/build/`.
 The Windows release build passed with GCC 14.3.1 and warnings treated as errors.
 
+For the relocated map-v2 app, use GCC 14.3.1 and build from clean:
+
+```sh
+make -C heater-coproc/port/l011 LAYOUT=bootloader clean
+make -C heater-coproc/port/l011 LAYOUT=bootloader
+```
+
+The relocated BIN and HEX are in `heater-coproc/port/l011/build-relocated/`.
+Run the portable host tests with `cmake -S Tests -B host-build`,
+`cmake --build host-build`, and `ctest --test-dir host-build`. Add
+`--config Release` to the build and `-C Release` to CTest for multi-config
+generators.
+
 ## Files
 
 - `heater-coproc/`: firmware core and platform port.
